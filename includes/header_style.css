@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Courier;
+    background-color: hsl(0, 0%, 96%);
+
+}
+h2{
+    font-size: 24px;
+    float: left;
+
+}
+
+header a {
+    text-decoration: none;
+    color: hsl(0, 0%, 96%);
+    
+}
+
+.head-nav{
+    position: sticky;
+    top: 0;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: hsl(221, 37%, 32%);;
+    transition: 0.4s;
+}
+
+.title{
+    font-size: 3rem;
+    transition: .4s;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.header-title-short{
+    display: none;
+}
+
+.navbar-menu{
+    list-style: none;
+    padding-right: 30px;
+}
+
+.navbar-menu li{
+    display: inline-block;
+    padding: 3px 20px 3px;   
+}
+
+.navbar-menu a{
+    transition: all 0.3s ease 0s;
+}
+
+.navbar-menu a:hover{
+    color: rgb(73, 158, 186);
+}
+
+.hamburger{
+    display: none;
+    width: 35px;
+    height: 35px;
+    transition: all 0.3s ease 0s;
+    padding: 3px;
+}
+
+@media only screen and (max-width: 900px) {
+    .navbar-item, .navbar-menu{
+        display: none;
+      }
+    .hamburger{
+        display: block;
+        float: right;
+        margin-right: 50px;
+    }
+
+    .hamburger img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .verticle-nav.responsive{
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .header-title {
+        display: none;
+      }
+    .header-title-short{
+        display: inline-block;
+    }
+}
+
+.verticle-nav{
+    width: 100%;
+    display: none;
+    border: none;
+}
+
+.verticle-nav li{
+    background-color: hsl(0, 0%, 15%);
+    opacity: .8;
+    width: 100%;
+    border: none;
+    transition: all 0.3s ease 0s;
+}
+
+.verticle-nav li:hover{
+    background-color: hsl(0, 0%, 20%);
+}
+
+.verticle-nav li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 10px 0 10px 0;
+    text-align: center;
+    color: whitesmoke;
+    text-decoration: none;
+    
+}
+
